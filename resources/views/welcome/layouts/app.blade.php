@@ -102,12 +102,12 @@
             <!--                        <ul>-->
             <!--                            @foreach($menu->subMenus as $menu)-->
             <!--                            <li class="mobile">-->
-            <!--                                <a href="{{asset($menu->menuLink())}}">{{$menu->menuName()}}</a>-->
+            <!--                                <a href="{{url($menu->menuLink())}}">{{$menu->menuName()}}</a>-->
                                             
             <!--                                @if($menu->subMenus->count() > 0)-->
             <!--                                <ul>-->
             <!--                                    @foreach($menu->subMenus as $menu)-->
-            <!--                                    <li><a href="{{asset($menu->menuLink())}}">{{$menu->menuName()}}</a></li>-->
+            <!--                                    <li><a href="{{url($menu->menuLink())}}">{{$menu->menuName()}}</a></li>-->
             <!--                                    @endforeach-->
             <!--                                </ul>-->
             <!--                                @endif-->
@@ -117,7 +117,7 @@
                                         
             <!--                        </ul>-->
             <!--                        @else-->
-            <!--                        <a href="{{asset($menu->menuLink())}}">{{$menu->menuName()}}</a>-->
+            <!--                        <a href="{{url($menu->menuLink())}}">{{$menu->menuName()}}</a>-->
             <!--                        @endif-->
                                     
             <!--                    </li>-->

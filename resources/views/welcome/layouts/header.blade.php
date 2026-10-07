@@ -26,7 +26,7 @@
                                         <ul class="menu">
                                          @foreach($menu->subMenus as $menu)
                                             <li class="mega-menu-item">
-                                                <a href="{{ asset($menu->menuLink()) }}" class="mega-menu-link">
+                                                <a href="{{ url($menu->menuLink()) }}" class="mega-menu-link">
                                                    {{ $menu->menuName() }}
                                                 </a>
                                                   @if($menu->subMenus->count())
@@ -34,7 +34,7 @@
                                                     <!-- Loop for Submenus -->
                                                     @foreach($menu->subMenus as $submenu)
                                                     <li class="mega-menu-item">
-                                                        <a href="{{ asset($submenu->menuLink()) }}" >
+                                                        <a href="{{ url($submenu->menuLink()) }}" >
                                                           {{ $submenu->menuName() }}
                                                         </a>
                                                     </li>
@@ -116,18 +116,18 @@
                         <ul class="menu">
                             @foreach($menu->subMenus as $menu)
                             <li class="menu-item">
-                                <a href="{{ asset($menu->menuLink()) }}">{{ $menu->menuName() }}</a>
+                                <a href="{{ url($menu->menuLink()) }}">{{ $menu->menuName() }}</a>
                                 @if($menu->subMenus->count())
                                 <ul class="submenu">
                                     @foreach($menu->subMenus as $submenu)
                                     <li>
-                                        <a style="padding: 20px !important; " href="{{ asset($submenu->menuLink()) }}">{{ $submenu->menuName() }}</a>
+                                        <a style="padding: 20px !important; " href="{{ url($submenu->menuLink()) }}">{{ $submenu->menuName() }}</a>
                                         
                                          @if($submenu->subMenus->count())
                                           <ul class="submenu lastSubmenu">
                                             @foreach($submenu->subMenus as $submenu)
                                             <li>
-                                                <a style="padding: 20px !important; " href="{{ asset($submenu->menuLink()) }}">{{ $submenu->menuName() }}</a>
+                                                <a style="padding: 20px !important; " href="{{ url($submenu->menuLink()) }}">{{ $submenu->menuName() }}</a>
                                             </li>
                                              @endforeach
                                         </ul>

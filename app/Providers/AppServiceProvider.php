@@ -7,14 +7,33 @@ use Illuminate\Support\ServiceProvider;
 class AppServiceProvider extends ServiceProvider
 {
     /**
+     * Site root for page links when it differs from what Laravel detected.
+     */
+    protected ?string $siteRoot = null;
+
+    /**
      * Register any application services.
      */
     public function register(): void
     {
-        // Static files live in public/. When the root index.php is the entry point (shared hosting),
-        // they are reachable under /public; with `php artisan serve` they are at the site root.
-        if (defined('LARAVEL_SERVED_FROM_ROOT') && !config('app.asset_url')) {
-            config(['app.asset_url' => rtrim($this->app['request']->root(), '/').'/public']);
+        // Static files live in public/. On shared hosting the document root is the project folder,
+        // so files are reachable under /public while pages must stay at the site root.
+        // With `php artisan serve` (document root = public/) nothing needs changing.
+        $root = rtrim($this->app['request']->root(), '/');
+
+        if (str_ends_with($root, '/public')) {
+            // Requests reach public/index.php through /public, so Laravel thinks the site lives there
+            $this->siteRoot = substr($root, 0, -strlen('/public'));
+            $publicRoot = $root;
+        } elseif (defined('LARAVEL_SERVED_FROM_ROOT')) {
+            // Requests reach the project-root index.php
+            $publicRoot = $root.'/public';
+        } else {
+            return;
+        }
+
+        if (!config('app.asset_url')) {
+            config(['app.asset_url' => $publicRoot]);
         }
     }
 
@@ -23,6 +42,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if ($this->siteRoot) {
+            \URL::forceRootUrl($this->siteRoot);
+        }
+
         // On a fresh database (e.g. before `php artisan migrate`) there are no settings to load yet
         if ($this->app->runningInConsole() && !\Schema::hasTable('generals')) {
             return;

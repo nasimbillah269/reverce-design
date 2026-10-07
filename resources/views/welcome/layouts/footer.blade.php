@@ -17,7 +17,7 @@
                         <h4>Quick Link</h4>
                         <ul class="footer-menu">
                             @foreach($menu->subMenus as $menu)
-                            <li><a href="{{asset($menu->menuLink())}}">{{$menu->menuName()}}</a></li>
+                            <li><a href="{{url($menu->menuLink())}}">{{$menu->menuName()}}</a></li>
                             @endforeach
                         </ul>
                         <!--<ul class="">-->
@@ -53,7 +53,7 @@
                         <h4>Products</h4>
                         <ul class="footer-menu">
                             @foreach($menu->subMenus as $menu)
-                            <li><a href="{{asset($menu->menuLink())}}">{{$menu->menuName()}}</a></li>
+                            <li><a href="{{url($menu->menuLink())}}">{{$menu->menuName()}}</a></li>
                             @endforeach
                         </ul>
                         <!--<ul class="">-->
@@ -114,7 +114,7 @@
                         <!--  @if($menu = menu('Footer Two'))-->
                         <!--   <ul class="footer-menu">-->
                         <!--    @foreach($menu->subMenus as $menu)-->
-                        <!--    <li><a href="{{asset($menu->menuLink())}}">{{$menu->menuName()}}</a></li>-->
+                        <!--    <li><a href="{{url($menu->menuLink())}}">{{$menu->menuName()}}</a></li>-->
                         <!--    @endforeach-->
                         <!--</ul>-->
                         <!--@endif-->
@@ -170,7 +170,7 @@
                 <!--                <h4>{{$menu->name}}</h4>-->
                 <!--                <ul class="footer-menu">-->
                 <!--                    @foreach($menu->subMenus as $menu)-->
-                <!--                    <li><a href="{{asset($menu->menuLink())}}">{{$menu->menuName()}}</a></li>-->
+                <!--                    <li><a href="{{url($menu->menuLink())}}">{{$menu->menuName()}}</a></li>-->
                 <!--                    @endforeach-->
                 <!--                </ul>-->
                 <!--            </div>-->
@@ -182,7 +182,7 @@
                 <!--                <h4>{{$menu->name}}</h4>-->
                 <!--                <ul class="footer-menu">-->
                 <!--                    @foreach($menu->subMenus as $menu)-->
-                <!--                    <li><a href="{{asset($menu->menuLink())}}">{{$menu->menuName()}}</a></li>-->
+                <!--                    <li><a href="{{url($menu->menuLink())}}">{{$menu->menuName()}}</a></li>-->
                 <!--                    @endforeach-->
                 <!--                </ul>-->
                 <!--            </div>-->
@@ -285,7 +285,7 @@
                                 @if($menu = menu('Footer Two'))
                                 <ul id="menu-footer-quick-links">
                                     @foreach($menu->subMenus as $menu)
-                                    <li><a href="{{asset($menu->menuLink())}}">{{$menu->menuName()}}</a></li>
+                                    <li><a href="{{url($menu->menuLink())}}">{{$menu->menuName()}}</a></li>
                                     @endforeach
 
                                 </ul>

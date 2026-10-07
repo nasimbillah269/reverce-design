@@ -8,7 +8,8 @@ $uri = urldecode(
     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
 );
 
-if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
+// PHP built-in server: let it serve real files from public/ (e.g. /public/welcome/css/main.css) directly
+if ($uri !== '/' && str_starts_with($uri, '/public/') && is_file(__DIR__.$uri)) {
     return false;
 }
 

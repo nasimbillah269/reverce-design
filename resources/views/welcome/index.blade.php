@@ -200,7 +200,7 @@
                                 <div class="featured-imagebox featured-imagebox-portfolio style3">
                                     <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                         <div class="featured-thumbnail">
-                                            <a href="{{ route('serviceCategory', ['slug' => $categorie->slug]) }}"> <img class="img-fluid" src="{{$categorie->image()}}" alt="image"></a>
+                                            <a href="{{ route('serviceCategory', ['slug' => $categorie->slug]) }}"> <img class="img-fluid" src="{{asset($categorie->image())}}" alt="image"></a>
                                         </div>
                                         <div class="ttm-media-link">
                                             <a href="{{ route('serviceCategory', ['slug' => $categorie->slug]) }}" class="ttm_link"><i class="ti ti-plus"></i></a>
