@@ -1,0 +1,76 @@
+[27-Sep-2026 21:47:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/database.php on line 18
+[27-Sep-2026 21:48:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/services.php on line 18
+[27-Sep-2026 21:48:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/cache.php on line 18
+[27-Sep-2026 21:48:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/queue.php on line 16
+[27-Sep-2026 21:48:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/mail.php on line 16
+[27-Sep-2026 21:48:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/app.php on line 19
+[27-Sep-2026 22:38:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/database.php on line 18
+[27-Sep-2026 22:39:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/mail.php on line 16
+[27-Sep-2026 22:39:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/cache.php on line 18
+[27-Sep-2026 22:39:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/queue.php on line 16
+[27-Sep-2026 22:39:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/services.php on line 18
+[27-Sep-2026 22:39:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/app.php on line 19
+[30-Sep-2026 15:44:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/services.php on line 18
+[03-Oct-2026 07:31:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/mail.php on line 16
+[03-Oct-2026 07:31:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/services.php on line 18
+[03-Oct-2026 07:31:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/database.php on line 18
+[03-Oct-2026 07:31:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/app.php on line 19
+[04-Oct-2026 19:58:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/app.php on line 19
+[05-Oct-2026 01:33:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reversed/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reversed/public_html/config/database.php on line 18

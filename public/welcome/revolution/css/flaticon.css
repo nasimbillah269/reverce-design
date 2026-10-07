@@ -1,0 +1,58 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 20/03/2019 02:18
+  	*/
+
+      @font-face {
+        font-family: "Flaticon";
+        src: url("../../fonts/Flaticon.eot");
+        src: url("../../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+             url("../../fonts/flaticon.woff2") format("woff2"),
+             url("../../fonts/Flaticon.woff") format("woff"),
+             url("../../fonts/Flaticon.ttf") format("truetype"),
+             url("../../fonts/Flaticon.svg#Flaticon") format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: "Flaticon";
+          src: url("../../fonts/Flaticon.svg#Flaticon") format("svg");
+        }
+      }
+      
+      [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+      [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+        font-family: Flaticon;
+              font-size: 20px;
+      font-style: normal;
+      margin-left: 20px;
+      }
+      
+      .flaticon-care:before { content: "\f100"; }
+      .flaticon-heart:before { content: "\f101"; }
+      .flaticon-brain:before { content: "\f102"; }
+      .flaticon-clipboard:before { content: "\f103"; }
+      .flaticon-syringe:before { content: "\f104"; }
+      .flaticon-tooth:before { content: "\f105"; }
+      .flaticon-pregnant:before { content: "\f106"; }
+      .flaticon-wound:before { content: "\f107"; }
+      .flaticon-doctor:before { content: "\f108"; }
+      .flaticon-doctor-1:before { content: "\f109"; }
+      .flaticon-search:before { content: "\f10a"; }
+      .flaticon-bone:before { content: "\f10b"; }
+      .flaticon-skeleton:before { content: "\f10c"; }
+      .flaticon-bone-1:before { content: "\f10d"; }
+      .flaticon-aid:before { content: "\f10e"; }
+      .flaticon-stethoscope:before { content: "\f10f"; }
+      .flaticon-doctor-2:before { content: "\f110"; }
+      .flaticon-heart-1:before { content: "\f111"; }
+      .flaticon-phone:before { content: "\f112"; }
+      .flaticon-hand-wash:before { content: "\f113"; }
+      .flaticon-radiation:before { content: "\f114"; }
+      .flaticon-wallet:before { content: "\f115"; }
+      .flaticon-clock:before { content: "\f116"; }
+      .flaticon-placeholder:before { content: "\f10e"; }
+      .flaticon-phone-call:before { content: "\f112"; }
+      .flaticon-envelope:before { content: "\f115"; }
