@@ -19,7 +19,7 @@
     .team-card .team-img img { width: 100%; height: 100%; min-height: 340px; object-fit: cover; object-position: top; display: block; }
     .team-card .team-info { flex: 1; padding: 40px 35px; display: flex; flex-direction: column; justify-content: center; border-left: 4px solid #ed1c24; }
     .team-card .team-info h3 { font-size: 28px; font-weight: 700; margin: 0 0 6px; color: #222; }
-    .team-card .team-info .designation { color: #ed1c24; font-weight: 600; font-size: 15px; letter-spacing: .5px; text-transform: uppercase; margin-bottom: 25px; }
+    .team-card .team-info .designation { color: #ed1c24; font-weight: 600; font-size: 15px; letter-spacing: .5px; text-transform: capitalize; margin-bottom: 25px; }
     .team-card .team-contact { list-style: none; padding: 0; margin: 0; }
     .team-card .team-contact li { display: flex; align-items: center; margin-bottom: 14px; font-size: 15px; }
     .team-card .team-contact li i { width: 40px; height: 40px; flex: 0 0 40px; border-radius: 50%; background: #ed1c24; color: #fff; display: flex; align-items: center; justify-content: center; margin-right: 14px; font-size: 16px; }
@@ -98,7 +98,7 @@ In order to achieve our ambitious vision to become a world-class garment manufac
             </div>
             <div class="team-info">
                 <h3>Roman</h3>
-                <div class="designation">Manager Merchandising &amp; Marketing</div>
+                <div class="designation">Manager, Merchandising &amp; Marketing</div>
                 <ul class="team-contact">
                     <li><i class="fa fa-envelope"></i><a href="mailto:roman@reverse-design.net">roman@reverse-design.net</a></li>
                     <li><i class="fa fa-phone"></i><a href="tel:+8801723692439">+880 1723 692439</a></li>

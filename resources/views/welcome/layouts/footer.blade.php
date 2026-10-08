@@ -301,22 +301,36 @@
 
                                 <div class="contact">
                                     <div class="top_bar_contact_item">
-                                        <div class="top_bar_icon"> <i class="flaticon flaticon-location-1"></i></div>
-                                        <div style="color: #fff; font-size: 10px;" class="top_bar_content">{!!general()->address_one!!}</div>
-                                    </div>
-
-                                    <div class="top_bar_contact_item">
                                         <div class="top_bar_icon"> <i class="flaticon flaticon-call-1"></i></div>
-                                        <div class="top_bar_content"> <a href="">{!!general()->mobile!!}</a></div>
+                                        <div class="top_bar_content footer-contact-text">
+                                            @foreach(array_filter(array_map('trim', explode(',', general()->mobile))) as $mobile)
+                                            <a href="tel:{{preg_replace('/[^0-9+]/', '', $mobile)}}">{{$mobile}}</a>
+                                            @endforeach
+                                        </div>
                                     </div>
 
 
                                     <div class="top_bar_contact_item">
                                         <div class="top_bar_icon"> <i class="flaticon flaticon-envelope"></i></div>
-                                        <div class="top_bar_content"> <a href="#">{!!general()->email!!}</a></div>
-
-
+                                        <div class="top_bar_content footer-contact-text">
+                                            @foreach(array_filter(array_map('trim', explode(',', general()->email))) as $email)
+                                            <a href="mailto:{{$email}}">{{$email}}</a>
+                                            @endforeach
+                                        </div>
                                     </div>
+
+                                    <div class="top_bar_contact_item">
+                                        <div class="top_bar_icon"> <i class="flaticon flaticon-location-1"></i></div>
+                                        <div class="top_bar_content footer-contact-text" style="color: #ffffff !important; font-size: 14px; line-height: 1.7;">{!! str_replace('Block-D,', 'Block-D,<br>', e(trim(html_entity_decode(strip_tags(general()->address_one))))) !!}</div>
+                                    </div>
+
+                                    <style>
+                                        .contact .top_bar_contact_item { display: flex; align-items: flex-start; }
+                                        .footer-contact-text { color: #fff; font-size: 14px; line-height: 1.7; }
+                                        .footer-contact-text p, .footer-contact-text span { margin: 0; color: #fff !important; font-size: 14px; }
+                                        .footer-contact-text a { display: block; color: #fff; font-size: 14px; word-break: break-word; }
+                                        .footer-contact-text a:hover { color: #ed1c24; }
+                                    </style>
 
 
 

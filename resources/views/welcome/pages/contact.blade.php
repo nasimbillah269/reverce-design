@@ -130,7 +130,13 @@ style="background-image:url({{asset($page->banner())}});background-repeat: no-re
         
         
         
-           <section class="ttm-row padding_zero-section mt_100 res-991-margin_top40 res-991-margin_bottom40 clearfix">
+           <section class="ttm-row padding_zero-section mt_100 res-991-margin_top40 res-991-margin_bottom40 clearfix contact-info-boxes">
+            <style>
+                .contact-info-boxes .featured-icon-box.style9 { padding: 30px 20px 25px; }
+                .contact-info-boxes .featured-icon-box.style9 .featured-icon { padding-right: 15px; }
+                .contact-info-boxes .featured-desc p { margin-bottom: 0; }
+                .contact-info-boxes .contact-hotline a { display: block; color: inherit; word-break: break-word; }
+            </style>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
@@ -162,7 +168,11 @@ style="background-image:url({{asset($page->banner())}});background-repeat: no-re
                                     <h3>Call us on</h3>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>{!!general()->mobile!!} </p>
+                                    <p class="contact-hotline">
+                                        @foreach(array_filter(array_map('trim', explode(',', general()->mobile))) as $mobile)
+                                        <a href="tel:{{preg_replace('/[^0-9+]/', '', $mobile)}}">{{$mobile}}</a>
+                                        @endforeach
+                                    </p>
                                 </div>
                             </div>
                         </div>
