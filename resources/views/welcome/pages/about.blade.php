@@ -10,7 +10,28 @@
 @endsection
  @push('css')
  <style>
-
+    .team-sec { padding: 60px 0 70px; background: #f6f6f6; }
+    .team-sec .sec-title { text-align: center; margin-bottom: 40px; }
+    .team-sec .sec-title h2 { margin: 0 0 10px; }
+    .team-sec .sec-title span { display: inline-block; width: 60px; height: 3px; background: #ed1c24; }
+    .team-card { display: flex; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,.08); max-width: 820px; margin: 0 auto; }
+    .team-card .team-img { flex: 0 0 300px; background: #fff; }
+    .team-card .team-img img { width: 100%; height: 100%; min-height: 340px; object-fit: cover; object-position: top; display: block; }
+    .team-card .team-info { flex: 1; padding: 40px 35px; display: flex; flex-direction: column; justify-content: center; border-left: 4px solid #ed1c24; }
+    .team-card .team-info h3 { font-size: 28px; font-weight: 700; margin: 0 0 6px; color: #222; }
+    .team-card .team-info .designation { color: #ed1c24; font-weight: 600; font-size: 15px; letter-spacing: .5px; text-transform: uppercase; margin-bottom: 25px; }
+    .team-card .team-contact { list-style: none; padding: 0; margin: 0; }
+    .team-card .team-contact li { display: flex; align-items: center; margin-bottom: 14px; font-size: 15px; }
+    .team-card .team-contact li i { width: 40px; height: 40px; flex: 0 0 40px; border-radius: 50%; background: #ed1c24; color: #fff; display: flex; align-items: center; justify-content: center; margin-right: 14px; font-size: 16px; }
+    .team-card .team-contact li a { color: #444; word-break: break-all; }
+    .team-card .team-contact li a:hover { color: #ed1c24; }
+    @media (max-width: 767px) {
+        .team-card { flex-direction: column; max-width: 400px; }
+        .team-card .team-img { flex: none; }
+        .team-card .team-img img { min-height: 0; height: 360px; }
+        .team-card .team-info { border-left: 0; border-top: 4px solid #ed1c24; padding: 30px 25px; text-align: center; }
+        .team-card .team-contact { align-self: center; text-align: left; }
+    }
  </style>
 @endpush 
 
@@ -58,15 +79,36 @@ In order to achieve our ambitious vision to become a world-class garment manufac
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                        <img src="{{asset(assetLink().'/images/uploads/page/About Us-2025-01-05-6779eb1c4c00e.jpg')}}" alt="About Us" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;">
+                        <img src="{{asset(assetLink().'/images/uploads/page/About Us-2025-01-05-6779eb1c4c00e.jpg')}}" alt="About Us" class="img-fluid mb-4" style="height: 250px; width: 100%; object-fit: cover;">
                     </div>
                 </div>
 
             </div>
         </div>
 
+<div class="team-sec">
+    <div class="container">
+        <div class="sec-title">
+            <h2 style="color: #000;">Contact Person</h2>
+            <span></span>
+        </div>
+        <div class="team-card">
+            <div class="team-img">
+                <img src="{{asset(assetLink().'/images/uploads/team/noman.jpg')}}" alt="Noman">
+            </div>
+            <div class="team-info">
+                <h3>Roman</h3>
+                <div class="designation">Manager Merchandising &amp; Marketing</div>
+                <ul class="team-contact">
+                    <li><i class="fa fa-envelope"></i><a href="mailto:roman@reverse-design.net">roman@reverse-design.net</a></li>
+                    <li><i class="fa fa-phone"></i><a href="tel:+8801723692439">+880 1723 692439</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-@endsection 
+@endsection
 
 @push('js') 
 
